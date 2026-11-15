@@ -215,12 +215,67 @@
 
 <div id="baseScreen" style="display: none;">
   <h1>🌙 LUNAR BASE</h1>
+  <h2 id="dayDisplay">DAY 1</h2>
+
+  <h2 id="missionTitle">DAY 1: SET UP YOUR EQUIPMENT</h2>
+
+  <p id="missionDescription">
+    Set up your radiation detectors, radio telescope, and communication antenna.
+  </p>
+
+  <div id="missionTasks">
+    <h3>YOUR TASK</h3>
+    <p>Choose which equipment to set up first:</p>
+
+    <button id="detectorButton">RADIATION DETECTOR</button>
+    <button id="telescopeButton">RADIO TELESCOPE</button>
+    <button id="antennaButton">COMMUNICATION ANTENNA</button>
+
+    <p id="taskResult"></p>
+  </div>
+  
+  <button id="completeMissionButton">COMPLETE MISSION</button>
+  <p id="missionStatus">Mission not completed yet!</p>
+
   <p>Welcome to your new home, astronaut!</p>
 
   <h2>BASE STATUS</h2>
-  <p>WATER: 100%</p>
-  <p>OXYGEN: 100%</p>
-  <p>POWER: 100%</p>
+
+  <p>WATER: <span id="waterDisplay">100</span>%</p>
+
+  <p>OXYGEN: <span id="oxygenDisplay">100</span>%</p>
+
+  <p>POWER: <span id="powerDisplay">100</span>%</p>
+
+  <button id="waterButton">USE 10 WATER</button>
+
+  <button id="cmeButton">CME EMERGENCY</button>
+
+  <button id="nextDayButton">NEXT DAY</button>
+
+  <div id="cmeEmergency" style="display: none";>
+    <h2> SOLAR RADIATION ALERT!</h2>
+
+  <p>
+    A Cornal Mass Ejection (CME) has been detected!
+    High-energy particles from the Sun are heading toward the Moon.
+    Outside activity is unsafe for 8 hours.
+  </p>
+
+  <p> How will you protect your base?</p>
+
+  <button id="bunkerChoice">
+    LOCKDOWN IN THE BUNKER
+  </button>
+
+  <button id="waterWallChoice">
+    BUILD WATER-LINED WALLS
+  </button>
+  <div id="cmeResult" style="display: none;">
+    <h2 id="resultTitle"></h2>
+    <p id="resultMessage"></p>
+  </div>
+  </div>
 </div>
 
 <script src="script.js"></script>
