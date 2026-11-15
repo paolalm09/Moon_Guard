@@ -1,12 +1,12 @@
 
-
-
 <html>
 <head>
-  <link rel="stylesheet" href="Style6.css">
+  <link rel="stylesheet" href="Hackathon.css">
 </head>
 
 <body>
+
+<div id="mainMenu">
 
 <center>
 <div class="moonguard-card">
@@ -109,6 +109,7 @@
   </button>
 </div>
 </center>
+
 <!-- Snow / Falling Stars -->
 <div class="box-of-star1">
   <div class="star star-position1"></div>
@@ -190,6 +191,39 @@
     <li></li>
   </ul>
 </div>
+
+</div>
+<div class="game-screen" id="gameScreen">
+  <h1>WELCOME TO THE MOON, ASTRONAUT!</h1>
+  <p>
+    You've arrived on the Moon!
+    Your mission is to build and protect a lunar base
+    so astronanut can safely live and work here.
+  </p>
+
+  <h2>YOUR MISSION</h2>
+
+  <p>🌱 Grow food</p>
+  <p>💧 Protect your water supply</p>
+  <p>🫧 Keep your oxygen levels safe</p>
+  <p>☀️ Manage your power</p>
+
+  <button class="base-btn" id="baseButton">
+    ENTER THE BASE
+  </button>
+</div>
+
+<div id="baseScreen" style="display: none;">
+  <h1>🌙 LUNAR BASE</h1>
+  <p>Welcome to your new home, astronaut!</p>
+
+  <h2>BASE STATUS</h2>
+  <p>WATER: 100%</p>
+  <p>OXYGEN: 100%</p>
+  <p>POWER: 100%</p>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
 
