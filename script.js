@@ -611,5 +611,18 @@ function moveAstronaut() {
 
     requestAnimationFrame(moveAstronaut);
 }
+playButton.addEventListener("click", function () {
+  document.querySelector("#mainMenu").style.display = "none";
+  const cs = document.querySelector("#cutsceneScreen");
+  const vid = document.querySelector("#cutsceneVideo");
+  cs.style.display = "block";
+  vid.play();
+  function finish() {
+    cs.style.display = "none";
+    document.querySelector("#exploreScreen").style.display = "block";
+  }
+  vid.addEventListener("ended", finish);
+  document.querySelector("#skipCutscene").addEventListener("click", finish);
+});
 
 moveAstronaut();
