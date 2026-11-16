@@ -994,3 +994,614 @@ body {
   color: #51458c;
   font-size: 32px;
 }
+
+/* WELCOME SCREEN */
+
+.game-screen p {
+    color: #383354;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.game-screen h2 {
+    color: #8b79d9;
+    margin-top: 25px;
+}
+
+/* ENTER THE BASE BUTTON */
+
+.base-btn {
+    background: #c6e377;
+    color: #2c2c2c;
+    border: 3px solid #2c2c2c;
+    border-radius: 18px;
+    padding: 14px 28px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 4px 4px 0 #2c2c2c;
+    transition: 0.2s ease;
+}
+
+.base-btn:hover {
+    background: #ffdf6c;
+    transform: translateY(-3px);
+    box-shadow: 6px 6px 0 #2c2c2c;
+}
+
+.base-btn:active {
+    transform: translateY(2px);
+    box-shadow: 2px 2px 0 #2c2c2c;
+}
+
+
+/* ================= LUNAR BASE DASHBOARD ================= */
+
+#baseScreen {
+    text-align: center;
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(253, 251, 247, 0.94);
+    border: 4px solid #c0bbfe;
+    border-radius: 30px;
+    box-shadow: 6px 6px 0 #2c2c2c;
+    box-sizing: border-box;
+}
+
+/* BASE HEADINGS */
+
+#baseScreen h1 {
+    color: #51458c;
+    font-size: 36px;
+    text-shadow: 2px 2px #ffdf6c;
+}
+
+#baseScreen h2 {
+    color: #7565bb;
+}
+
+#baseScreen h3 {
+    color: #51458c;
+    font-size: 23px;
+}
+
+/* MISSION DESCRIPTION */
+
+#missionDescription {
+    color: #383354;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px auto;
+    max-width: 650px;
+}
+
+/* MISSION TASK PANELS */
+
+#missionTasks,
+#day2Tasks,
+#day3Tasks,
+#day4Tasks,
+#day5Tasks {
+    background: #f0edff;
+    border: 3px solid #c0bbfe;
+    border-radius: 22px;
+    padding: 22px;
+    margin: 25px 0;
+    box-shadow: 4px 4px 0 rgba(44, 44, 44, 0.15);
+}
+
+#missionTasks p,
+#day2Tasks p,
+#day3Tasks p,
+#day4Tasks p,
+#day5Tasks p {
+    color: #383354;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+/* MISSION BUTTONS */
+
+#baseScreen button {
+    background: #c6e377;
+    color: #2c2c2c;
+    border: 3px solid #2c2c2c;
+    border-radius: 15px;
+    padding: 12px 18px;
+    margin: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 #2c2c2c;
+    transition: 0.2s ease;
+}
+
+#baseScreen button:hover {
+    background: #ffdf6c;
+    transform: translateY(-3px);
+    box-shadow: 5px 5px 0 #2c2c2c;
+}
+
+#baseScreen button:active {
+    transform: translateY(2px);
+    box-shadow: 1px 1px 0 #2c2c2c;
+}
+
+#baseScreen button:disabled {
+    background: #d8d8d8;
+    color: #777;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* MISSION STATUS */
+
+#missionStatus {
+    font-weight: bold;
+    color: #7565bb;
+    font-size: 18px;
+    margin: 20px;
+}
+
+/* BASE RESOURCES */
+
+#waterDisplay,
+#oxygenDisplay,
+#powerDisplay {
+    display: inline-block;
+    min-width: 45px;
+    background: #ffffff;
+    border: 2px solid #c0bbfe;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: #51458c;
+}
+
+/* RESOURCE AND CONTROL AREA */
+
+#baseScreen > p {
+    font-size: 17px;
+    color: #383354;
+}
+
+/* CME EMERGENCY PANEL */
+
+#cmeEmergency {
+    position: relative;
+    background: #fff0f5;
+    border: 4px solid #ff8ba7;
+    border-radius: 22px;
+    padding: 22px;
+    margin: 25px 0;
+    box-shadow: 4px 4px 0 rgba(44, 44, 44, 0.15);
+}
+
+#cmeEmergency h2 {
+    color: #d94f7c;
+}
+
+#cmeEmergency p {
+    color: #383354;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+/* ================= MISSION ENDING ================= */
+
+#endingScreen {
+    text-align: center;
+    max-width: 750px;
+    margin: 100px auto;
+    padding: 40px;
+    background: rgba(253, 251, 247, 0.95);
+    border: 4px solid #c0bbfe;
+    border-radius: 30px;
+    box-shadow: 6px 6px 0 #2c2c2c;
+}
+
+#endingScreen h1 {
+    color: #51458c;
+    font-size: 38px;
+    text-shadow: 2px 2px #ffdf6c;
+}
+
+#endingScreen h2 {
+    color: #8b79d9;
+}
+
+#endingScreen p {
+    color: #383354;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+/* =================================
+   MOONGUARD - LUNAR CONTROL ROOM
+================================= */
+
+#baseScreen {
+    max-width: 1100px;
+    width: calc(100% - 32px);
+    margin: 35px auto;
+    padding: 35px;
+    box-sizing: border-box;
+
+    background:
+        radial-gradient(circle at 50% 0%, #354c80 0%, transparent 55%),
+        linear-gradient(145deg, #111a35, #20284b 60%, #11182d);
+
+    color: #f4f3ff;
+    border: 3px solid #7189d9;
+    border-radius: 28px;
+    box-shadow:
+        0 0 25px rgba(104, 151, 255, 0.3),
+        inset 0 0 35px rgba(100, 130, 255, 0.08);
+
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+/* Main heading */
+
+#baseScreen h1 {
+    color: #ffffff;
+    font-size: 38px;
+    letter-spacing: 4px;
+    text-shadow: 0 0 15px #83cfff;
+}
+
+#baseScreen h2 {
+    color: #9de5ff;
+    letter-spacing: 2px;
+}
+
+#baseScreen h3 {
+    color: #ffe28a;
+    font-size: 22px;
+}
+
+/* Mission description */
+
+#missionDescription {
+    color: #d8e4ff;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Mission control panels */
+
+#missionTasks,
+#day2Tasks,
+#day3Tasks,
+#day4Tasks,
+#day5Tasks {
+    background: linear-gradient(145deg, #303e69, #202b4c);
+    border: 2px solid #7189d9;
+    border-radius: 20px;
+    padding: 25px;
+    margin: 25px 0;
+
+    box-shadow:
+        0 0 15px rgba(110, 160, 255, 0.15),
+        inset 0 0 15px rgba(255, 255, 255, 0.03);
+}
+
+#baseScreen p {
+    color: #e0e8ff;
+    line-height: 1.6;
+}
+
+/* Futuristic control buttons */
+
+#baseScreen button {
+    background: linear-gradient(145deg, #7be0e8, #65a9e8);
+    color: #14213d;
+    border: 2px solid #b5f4ff;
+    border-radius: 12px;
+
+    padding: 13px 20px;
+    margin: 8px;
+
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 14px;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 0 #315a91;
+    transition: 0.2s ease;
+}
+
+#baseScreen button:hover {
+    background: #ffe28a;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 0 #94743c;
+}
+
+#baseScreen button:disabled {
+    background: #68718a;
+    color: #c4cad8;
+    border-color: #8993aa;
+    box-shadow: none;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Resource indicators */
+
+#waterDisplay,
+#oxygenDisplay,
+#powerDisplay {
+    display: inline-block;
+    min-width: 45px;
+    padding: 7px 12px;
+
+    background: #263e68;
+    color: #a9f3ff;
+
+    border: 2px solid #6ccde9;
+    border-radius: 10px;
+
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 0 0 8px #6ccde9;
+}
+
+/* Mission progress */
+
+#missionStatus {
+    color: #a9f3ff;
+    font-size: 19px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #6ccde9;
+}
+
+/* Solar radiation warning */
+
+#cmeEmergency {
+    background: linear-gradient(145deg, #572c49, #302443);
+    border: 3px solid #ff8ba7;
+    border-radius: 20px;
+    padding: 25px;
+    margin-top: 25px;
+    box-shadow: 0 0 20px rgba(255, 139, 167, 0.25);
+}
+
+#cmeEmergency h2 {
+    color: #ff9db6;
+}
+
+/* Mobile layout */
+
+@media (max-width: 650px) {
+    #baseScreen {
+        padding: 18px;
+        margin: 15px auto;
+    }
+
+    #baseScreen h1 {
+        font-size: 28px;
+    }
+
+    #baseScreen button {
+        width: 100%;
+        margin: 7px 0;
+    }
+}
+
+
+/* ==================================
+   MOONGUARD - EXPLORATION GAME
+================================== */
+
+#exploreScreen {
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #111a2c;
+    color: white;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+.game-hud {
+    max-width: 1200px;
+    margin: 0 auto 18px;
+    padding: 15px 22px;
+    background: #202f4d;
+    border: 2px solid #7189d9;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.hud-title {
+    font-size: 23px;
+    font-weight: bold;
+    color: #a9eaff;
+}
+
+.hud-resources {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 14px;
+}
+
+.hud-day {
+    color: #ffe28a;
+    font-weight: bold;
+}
+
+.game-layout {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(210px, 1fr);
+    gap: 18px;
+}
+
+#gameWorld {
+    position: relative;
+    min-height: 570px;
+    overflow: hidden;
+    border: 4px solid #7189d9;
+    border-radius: 20px;
+    background-color: #777b89;
+    background-image:
+        radial-gradient(circle, #a9aab1 2px, transparent 3px),
+        radial-gradient(circle, #626776 3px, transparent 4px);
+    background-size: 75px 75px, 110px 110px;
+}
+
+.base-room {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #b5c7e8;
+    border-radius: 18px;
+    background: #344967;
+    box-shadow: inset 0 0 20px #182a45;
+    text-align: center;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.base-room h3 {
+    color: #b9eaff;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.room-decoration {
+    font-size: 30px;
+    margin: 8px;
+}
+
+.room-label {
+    font-size: 11px;
+    color: #d5e4ff;
+}
+
+.living-room {
+    width: 43%;
+    height: 38%;
+    top: 8%;
+    left: 5%;
+}
+
+.science-room {
+    width: 43%;
+    height: 38%;
+    top: 8%;
+    right: 5%;
+}
+
+.greenhouse-room {
+    width: 43%;
+    height: 38%;
+    bottom: 8%;
+    left: 5%;
+    background: #285448;
+}
+
+.control-room {
+    width: 43%;
+    height: 38%;
+    bottom: 8%;
+    right: 5%;
+}
+
+.moon-window {
+    position: absolute;
+    top: 45%;
+    left: 42%;
+    width: 16%;
+    height: 10%;
+    border: 3px solid #b5eaff;
+    border-radius: 50%;
+    background: #263c60;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 22px;
+}
+
+.moon-window span {
+    font-size: 9px;
+    color: white;
+}
+
+#astronaut {
+    position: absolute;
+    left: 47%;
+    top: 46%;
+    z-index: 5;
+    font-size: 38px;
+    line-height: 1;
+    user-select: none;
+    transition: left 0.08s linear, top 0.08s linear;
+}
+
+.game-sidebar {
+    padding: 22px;
+    background: #202f4d;
+    border: 2px solid #7189d9;
+    border-radius: 18px;
+}
+
+.game-sidebar h2 {
+    color: #9de5ff;
+}
+
+.mission-hint {
+    margin-top: 25px;
+    padding: 14px;
+    background: #344967;
+    border-radius: 12px;
+    line-height: 1.5;
+}
+
+#interactionMessage {
+    margin-top: 22px;
+    color: #ffe28a;
+    font-weight: bold;
+}
+
+@media(max-width: 750px) {
+    .game-layout {
+        grid-template-columns: 1fr;
+    }
+
+    #gameWorld {
+        min-height: 480px;
+    }
+
+    .game-sidebar {
+        min-height: 180px;
+    }
+}
+
+#astronaut {
+    position: absolute;
+    z-index: 5;
+    width: 65px;
+    height: 85px;
+}
+
+#astronaut img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    pointer-events: none;
+}
