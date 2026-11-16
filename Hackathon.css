@@ -1,5 +1,5 @@
-.body {
-  background-image: url("Characters/Background.jpg");
+body {
+  background-image: url("Background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1206,19 +1206,16 @@
 
 #endingScreen h1 {
     color: #51458c;
-    font-family: inherit;
     font-size: 38px;
     text-shadow: 2px 2px #ffdf6c;
 }
 
 #endingScreen h2 {
-    font-family: inherit;
     color: #8b79d9;
 }
 
 #endingScreen p {
     color: #383354;
-    font-family: inherit;
     font-size: 19px;
     line-height: 1.6;
 }
