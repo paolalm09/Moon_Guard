@@ -192,7 +192,90 @@
   </ul>
 </div>
 
+
 </div>
+
+<!-- NEW MOONGUARD EXPLORATION SCREEN -->
+<section id="exploreScreen" style="display: none;">
+
+    <header class="game-hud">
+        <div class="hud-title">🌙 MOONGUARD</div>
+
+        <div class="hud-resources">
+            <span>💧 Water: <b id="exploreWaterDisplay">100</b></span>
+            <span>⚡ Power: <b id="explorePowerDisplay">100</b></span>
+            <span>🫧 Oxygen: <b id="exploreOxygenDisplay">100</b></span>
+        </div>
+
+        <div class="hud-day" id="hudDay">DAY 1 / 5</div>
+    </header>
+
+    <div class="game-layout">
+
+        <div id="gameWorld">
+
+            <div class="base-room living-room">
+                <h3>LIVING QUARTERS</h3>
+                <div class="room-decoration">🛏️ 🛏️</div>
+                <div class="room-label">Crew sleeping area</div>
+            </div>
+
+            <div class="base-room science-room">
+                <h3>SCIENCE LAB</h3>
+                <div class="room-decoration">🔬 🪨</div>
+                <div class="room-label">Research station</div>
+            </div>
+
+            <div class="base-room greenhouse-room">
+                <h3>GREENHOUSE</h3>
+                <div class="room-decoration">🌱 🌿 🪴</div>
+                <div class="room-label">Plant growing area</div>
+            </div>
+
+            <div class="base-room control-room">
+                <h3>CONTROL ROOM</h3>
+                <div class="room-decoration">🖥️ 📡</div>
+                <div class="room-label">Mission controls</div>
+            </div>
+
+            <!-- Temporary astronaut character -->
+            <div id="astronaut" aria-label="Your astronaut">
+                <img src="1.1.png" alt="Moonguard astronaut">
+            </div>
+
+        </div>
+
+        <aside class="game-sidebar">
+            <h2>YOUR MISSION</h2>
+            <p>Welcome to the Moon, astronaut!</p>
+            <p>Explore your base and get ready for your first mission.</p>
+
+            <div class="mission-hint">
+                <b>HOW TO MOVE</b>
+                <p>Use WASD or the arrow keys to move.</p>
+                <p>Walk up to objects and press E to interact.</p>
+            </div>
+            <p id="interactionMessage">Explore your lunar base!</p>
+
+            <div id="computerPanel" class="computer-panel" style="display: none;">
+              <h2>🌙 MISSION COMPUTER</h2>
+
+              <p>Welcome, astronaut!</p>
+
+              <p>
+                Your lunar base is ready for its first mission.
+                Before heading outside, remember to check your
+                equipment and radiation levels.
+              </p>
+
+              <button id="closeComputer">CLOSE COMPUTER</button>
+            </div>
+        </aside>
+
+    </div>
+
+</section>
+
 <div class="game-screen" id="gameScreen">
   <h1>WELCOME TO THE MOON, ASTRONAUT!</h1>
   <p>
@@ -233,11 +316,53 @@
 
     <p id="taskResult"></p>
   </div>
-  
+
+  <div id="day2Tasks" style="display: none;">
+    <h3>🌙 MOON SAMPLE ANALYSIS</h3>
+    <p>You collected lunar soil! What should you use to process your samples?</p>
+
+    <button id="compostButton">ORGANIC COMPOST</button>
+    <button id="filterButton">CLEAN CO2 FILTERS</button>
+
+    <p id="day2Result"></p>
+  </div>
+
+  <div id="day3Tasks" style="display: none;">
+    <h3>🌱 GREENHOUSE EMERGENCY!</h3>
+    <p>Your plants are struggling! How will you protect your crew's food supply?</p>
+
+    <button id="seedButton">PLANT NEW SEEDS</button>
+    <button id="foodButton">USE EMERGENCY FOOD</button>
+
+    <p id="day3Result"></p>
+  </div>
+
+  <div id="day4Tasks" style="display: none;">
+    <h3>⚡ POWER SYSTEM CHECK</h3>
+    <p>Your backup generator has failed! How will you manage your remaining power?</p>
+
+    <button id="waterRecycleButton">SLOW DOWN WATER RECYCLING</button>
+    <button id="earthMessageButton">SEND MESSAGE TO EARTH</button>
+    <button id="repairButton">REPAIR THE GENERATOR</button>
+
+    <p id="day4Result"></p>
+  </div>
+
+  <div id="day5Tasks" style="display: none;">
+    <h3>🌙 MOONQUAKE ALERT!</h3>
+    <p>A moonquake has damaged your communication antenna! How will you restore contact with Earth?</p>
+
+    <button id="backupAntennaButton">USE BACKUP ANTENNA</button>
+    <button id="repairDishButton">REPAIR THE DISH</button>
+    <button id="roverButton">USE ROVER RELAY</button>
+
+    <p id="day5Result"></p>
+  </div>
+
   <button id="completeMissionButton">COMPLETE MISSION</button>
   <p id="missionStatus">Mission not completed yet!</p>
 
-  <p>Welcome to your new home, astronaut!</p>
+  <p>LUNAR BASE CONTROL CENTER</p>
 
   <h2>BASE STATUS</h2>
 
@@ -247,17 +372,13 @@
 
   <p>POWER: <span id="powerDisplay">100</span>%</p>
 
-  <button id="waterButton">USE 10 WATER</button>
-
-  <button id="cmeButton">CME EMERGENCY</button>
-
   <button id="nextDayButton">NEXT DAY</button>
 
   <div id="cmeEmergency" style="display: none";>
     <h2> SOLAR RADIATION ALERT!</h2>
 
   <p>
-    A Cornal Mass Ejection (CME) has been detected!
+    A Coronal Mass Ejection (CME) has been detected!
     High-energy particles from the Sun are heading toward the Moon.
     Outside activity is unsafe for 8 hours.
   </p>
@@ -276,6 +397,20 @@
     <p id="resultMessage"></p>
   </div>
   </div>
+</div>
+
+<div id="endingScreen" style="display: none;">
+    <h1>🌙 MISSION COMPLETE! 🚀</h1>
+
+    <h2>CONGRATULATIONS, ASTRONAUT!</h2>
+
+    <p>
+        You survived your lunar mission!
+        Your decisions helped protect your crew
+        and keep the Moon base running.
+    </p>
+
+    <h2>🌟 YOU ARE A MOONGUARD HERO! 🌟</h2>
 </div>
 
 <script src="script.js"></script>
