@@ -41,12 +41,42 @@ const missions ={
     }
 };
 
+
 const playButton = document.querySelector(".play-btn");
+
+const introVideoScreen = document.querySelector("#introVideoScreen");
+const introVideo = document.querySelector("#introVideo");
+const skipIntroButton = document.querySelector("#skipIntroButton");
+
+function startMoonBase() {
+    introVideo.pause();
+    introVideoScreen.style.display = "none";
+    document.querySelector("#exploreScreen").style.display = "block";
+}
 
 playButton.addEventListener("click", function() {
     document.querySelector("#mainMenu").style.display = "none";
-    document.querySelector("#exploreScreen").style.display = "block";
+
+    introVideoScreen.style.display = "flex";
+
+    introVideo.currentTime = 0;
+    introVideo.play().catch(function() {
+        introVideo.controls = true;
+    });
 });
+
+introVideo.addEventListener("ended", function() {
+    startMoonBase();
+});
+
+skipIntroButton.addEventListener("click", function() {
+    startMoonBase();
+});
+
+introVideo.addEventListener("error", function() {
+    startMoonBase();
+});
+
 
 //adding button logic
 const baseButton = document.querySelector("#baseButton");
@@ -611,18 +641,5 @@ function moveAstronaut() {
 
     requestAnimationFrame(moveAstronaut);
 }
-playButton.addEventListener("click", function () {
-  document.querySelector("#mainMenu").style.display = "none";
-  const cs = document.querySelector("#cutsceneScreen");
-  const vid = document.querySelector("#cutsceneVideo");
-  cs.style.display = "block";
-  vid.play();
-  function finish() {
-    cs.style.display = "none";
-    document.querySelector("#exploreScreen").style.display = "block";
-  }
-  vid.addEventListener("ended", finish);
-  document.querySelector("#skipCutscene").addEventListener("click", finish);
-});
 
 moveAstronaut();
