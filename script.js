@@ -317,7 +317,7 @@ seedButton.addEventListener("click", function() {
 
     document.querySelector("#day3Result").textContent =
         "New seeds planted! Your greenhouse has a chance to recover, but growing crops requires water and power.";
-power = Math.min(100, power + 5);
+
     seedButton.disabled = true;
     document.querySelector("#foodButton").disabled = true;
 
