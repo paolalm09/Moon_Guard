@@ -380,7 +380,7 @@ body {
 }
 
 
-/* ================= ASTRONAUT & STARS ================= */
+/* ASTRONAUT & STARS */
 @keyframes snow {
   0% {
     opacity: 0;
@@ -1036,7 +1036,7 @@ body {
 }
 
 
-/* ================= LUNAR BASE DASHBOARD ================= */
+/* LUNAR BASE DASHBOARD */
 
 #baseScreen {
     text-align: center;
@@ -1191,7 +1191,7 @@ body {
     line-height: 1.5;
 }
 
-/* ================= MISSION ENDING ================= */
+/* MISSION ENDING */
 
 #endingScreen {
     text-align: center;
@@ -1220,9 +1220,7 @@ body {
     line-height: 1.6;
 }
 
-/* =================================
-   MOONGUARD - LUNAR CONTROL ROOM
-================================= */
+/* MOONGUARD - LUNAR CONTROL ROOM */
 
 #baseScreen {
     max-width: 1100px;
@@ -1394,9 +1392,7 @@ body {
 }
 
 
-/* ==================================
-   MOONGUARD - EXPLORATION GAME
-================================== */
+/* MOONGUARD - EXPLORATION GAME */
 
 #exploreScreen {
     min-height: 100vh;
